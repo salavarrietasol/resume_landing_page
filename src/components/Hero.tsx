@@ -24,7 +24,7 @@ export function Hero({ data }: HeroProps) {
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)',
+              'linear-gradient(rgba(98,48,201,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(98,48,201,0.12) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
           }}
         />
@@ -35,8 +35,8 @@ export function Hero({ data }: HeroProps) {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-600 border-surface-600  text-surface-300 text-sm font-mono mb-8 animate-fade-up ">
-              <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse-slow inline-block" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border-brand-100 text-brand-700 text-sm font-mono mb-8 animate-fade-up ">
+              <span className="w-3 h-3 rounded-full bg-[#25D366] animate-pulse-slow inline-block" />
               {data.availability}
             </div>
 
@@ -51,7 +51,7 @@ export function Hero({ data }: HeroProps) {
 
             {/* Title */}
             <p
-              className="text-brand-300 font-mono text-lg sm:text-xl mb-6 animate-fade-up"
+              className="text-brand-700 font-mono text-lg sm:text-xl mb-6 animate-fade-up"
               style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
             >
               {data.title}
@@ -59,7 +59,7 @@ export function Hero({ data }: HeroProps) {
 
             {/* Tagline */}
             <p
-              className="font-display text-2xl sm:text-3xl text-white/90 italic mb-6 animate-fade-up"
+              className="font-display text-2xl sm:text-3xl text-surface-900 italic mb-6 animate-fade-up"
               style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
             >
               "{data.tagline}"
@@ -67,7 +67,7 @@ export function Hero({ data }: HeroProps) {
 
             {/* Description */}
             <p
-              className="text-white/60 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10 animate-fade-up"
+              className="text-surface-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10 animate-fade-up"
               style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
             >
               {data.description}
@@ -103,7 +103,7 @@ export function Hero({ data }: HeroProps) {
               {data.stats.map((stat, i) => (
                 <div key={i} className="flex flex-col items-center lg:items-start">
                   <span className="font-display text-2xl font-bold gradient-text">{stat.value}</span>
-                  <span className="text-white/50 text-sm">{stat.label}</span>
+                  <span className="text-surface-600 text-sm">{stat.label}</span>
                 </div>
               ))}
             </div>
@@ -174,9 +174,9 @@ export function Hero({ data }: HeroProps) {
               </button>
 
             {/* Floating badge */}
-            <div className="absolute -bottom-2 -right-2 bg-surface-700 border border-white/10 rounded-2xl px-4 py-2.5 shadow-card z-20">
+            <div className="absolute -bottom-2 -right-2 bg-surface-950 border border-brand-200/20 rounded-2xl px-4 py-2.5 shadow-card z-20">
               <p className="text-white font-semibold text-sm">{data.title}</p>
-              <p className="text-brand-400 text-xs font-mono">{data.location}</p>
+              <p className="text-brand-200 text-xs font-mono">{data.location}</p>
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@ export function Hero({ data }: HeroProps) {
         <div className="flex justify-center mt-16">
           <a
             href="#sobre-mi"
-            className="flex flex-col items-center gap-2 text-white/30 hover:text-white/60 transition-colors group"
+            className="flex flex-col items-center gap-2 text-surface-500 hover:text-brand-700 transition-colors group"
           >
             <span className="text-xs font-mono">Explorar perfil</span>
             <ChevronDown size={20} className="animate-bounce" />

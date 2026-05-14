@@ -13,17 +13,17 @@ export function WhatsAppButton({ data }: WhatsAppButtonProps) {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {/* Tooltip */}
       {showTooltip && (
-        <div className="bg-surface-700 border border-white/10 rounded-2xl p-4 shadow-card max-w-xs animate-fade-up">
+        <div className="bg-surface-950 border border-brand-200/20 rounded-2xl p-4 shadow-card max-w-xs animate-fade-up">
           <div className="flex items-start justify-between gap-3 mb-2">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
-                <MessageCircle size={16} className="text-green-400" />
+               <div className="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center">
+                <MessageCircle size={16} className="text-white" />
               </div>
               <div>
                 <p className="text-white text-sm font-semibold">
                   {data.name.split(' ')[0]}
                 </p>
-                <p className="text-green-400 text-xs font-mono">En línea</p>
+                <p className="text-[#25D366] text-xs font-mono">En línea</p>
               </div>
             </div>
             <button
@@ -40,7 +40,8 @@ export function WhatsAppButton({ data }: WhatsAppButtonProps) {
             href="https://wa.me/573004843894?text=%C2%A1Hola!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20seguros.%20%C2%BFMe%20puedes%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full text-center bg-green-500 hover:bg-green-400 text-white text-sm font-medium py-2.5 rounded-xl transition-colors"
+            className="block w-full text-center bg-brand-600 hover:bg-brand-500 text-white text-sm font-medium py-2.5 rounded-xl transition-colors"
+
           >
             Iniciar chat
           </a>
@@ -50,12 +51,12 @@ export function WhatsAppButton({ data }: WhatsAppButtonProps) {
       {/* Button */}
       <button
         onClick={() => setShowTooltip(!showTooltip)}
-        className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-400 text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1 flex items-center justify-center relative"
+        className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1 flex items-center justify-center relative"
         aria-label="Contactar por WhatsApp"
       >
         <MessageCircle size={26} />
         {/* Pulse ring */}
-        <span className="absolute inset-0 rounded-full bg-green-400/30 animate-ping" />
+        <span className="absolute inset-0 rounded-full bg-[#25D366]/30 animate-ping" />
       </button>
     </div>
   );

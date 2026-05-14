@@ -37,7 +37,7 @@ export function Navbar({ data }: NavbarProps) {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-surface-900/90 backdrop-blur-xl border-b border-white/5 shadow-card'
+          ? 'bg-white/90 backdrop-blur-xl border-b border-brand-100/80 shadow-card'
           : 'bg-transparent'
       }`}
     >
@@ -48,9 +48,9 @@ export function Navbar({ data }: NavbarProps) {
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center font-display font-bold text-sm text-white shadow-glow group-hover:shadow-brand-lg transition-shadow duration-300">
               {initials}
             </div>
-            <span className="font-display font-semibold text-white text-lg hidden sm:block">
+            <span className="font-display font-semibold text-surface-950 text-lg hidden sm:block">
               {data.name.split(' ')[0]}
-              <span className="text-brand-400"> {data.name.split(' ')[1]}</span>
+              <span className="text-brand-600"> {data.name.split(' ')[1]}</span>
             </span>
           </a>
 
@@ -60,7 +60,7 @@ export function Navbar({ data }: NavbarProps) {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm text-white/70 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200 font-body"
+                className="px-3 py-2 text-sm text-surface-700 hover:text-brand-700 rounded-lg hover:bg-brand-50 transition-all duration-200 font-body"
               >
                 {link.label}
               </a>
@@ -79,7 +79,7 @@ export function Navbar({ data }: NavbarProps) {
             </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+              className="lg:hidden p-2 rounded-xl text-surface-700 hover:text-brand-700 hover:bg-brand-50 transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={22} /> : <Menu size={22} />}
@@ -94,13 +94,13 @@ export function Navbar({ data }: NavbarProps) {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-surface-800/95 backdrop-blur-xl border-b border-white/5 px-4 py-4 flex flex-col gap-1">
+        <div className="bg-white/95 backdrop-blur-xl border-b border-brand-100/80 px-4 py-4 flex flex-col gap-1">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-all duration-200 font-medium"
+              className="px-4 py-3 text-surface-700 hover:text-brand-700 hover:bg-brand-50 rounded-xl transition-all duration-200 font-medium"
             >
               {link.label}
             </a>

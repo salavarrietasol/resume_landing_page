@@ -26,14 +26,14 @@ export function About({ data }: AboutProps) {
                   <span className="text-2xl">👤</span>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-semibold text-white">{data.name}</h3>
-                  <p className="text-brand-400 text-sm font-mono">{data.title}</p>
+                  <h3 className="font-display text-xl font-semibold text-surface-950">{data.name}</h3>
+                  <p className="text-brand-700 text-sm font-mono">{data.title}</p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 {data.longBio.split('\n\n').map((paragraph, i) => (
-                  <p key={i} className="text-white/70 leading-relaxed">
+                  <p key={i} className="text-surface-700 leading-relaxed">
                     {paragraph}
                   </p>
                 ))}
@@ -44,7 +44,7 @@ export function About({ data }: AboutProps) {
                 {data.services.slice(0, 4).map((s) => (
                   <span
                     key={s.id}
-                    className="px-3 py-1.5 rounded-lg bg-brand-500/10 border border-brand-500/20 text-brand-300 text-xs font-mono"
+                    className="px-3 py-1.5 rounded-lg bg-brand-50 border border-brand-200 text-brand-700 text-xs font-mono"
                   >
                     {s.title}
                   </span>
@@ -56,7 +56,7 @@ export function About({ data }: AboutProps) {
           {/* Info Card */}
           <div className="space-y-4">
             <div className="card-base p-6">
-              <h3 className="font-display font-semibold text-white mb-5 text-lg">
+              <h3 className="font-display font-semibold text-surface-950 mb-5 text-lg">
                 Datos de contacto
               </h3>
               <div className="space-y-4">
@@ -92,7 +92,7 @@ export function About({ data }: AboutProps) {
 
             {/* Social links */}
             <div className="card-base p-6">
-              <h3 className="font-display font-semibold text-white mb-4 text-lg">
+              <h3 className="font-display font-semibold text-surface-950 mb-4 text-lg">
                 Redes profesionales
               </h3>
               <div className="space-y-3">
@@ -130,12 +130,12 @@ function InfoRow({
 }) {
   const content = (
     <div className="flex items-start gap-3">
-      <div className="w-8 h-8 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-400 flex-shrink-0 mt-0.5">
+      <div className="w-8 h-8 rounded-lg bg-brand-50 flex items-center justify-center text-brand-700 flex-shrink-0 mt-0.5">
         {icon}
       </div>
       <div>
-        <p className="text-white/40 text-xs font-mono uppercase tracking-wider mb-0.5">{label}</p>
-        <p className="text-white/90 text-sm font-medium">{value}</p>
+        <p className="text-surface-500 text-xs font-mono uppercase tracking-wider mb-0.5">{label}</p>
+        <p className="text-surface-900 text-sm font-medium">{value}</p>
       </div>
     </div>
   );
@@ -157,10 +157,10 @@ function SocialLink({ href, label, icon }: { href: string; label: string; icon: 
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-brand-500/10 border border-white/5 hover:border-brand-500/20 transition-all duration-200 group"
+      className="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-brand-50/70 hover:bg-brand-100 border border-brand-100 hover:border-brand-300 transition-all duration-200 group"
     >
       <span className="text-base">{icon}</span>
-      <span className="text-white/70 group-hover:text-white text-sm font-medium transition-colors">
+      <span className="text-surface-700 group-hover:text-brand-800 text-sm font-medium transition-colors">
         {label}
       </span>
     </a>

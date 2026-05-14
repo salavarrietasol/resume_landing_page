@@ -6,10 +6,10 @@ interface ProjectsProps {
 }
 
 const typeColors: Record<string, string> = {
-  tech: 'bg-blue-500/10 border-blue-500/20 text-blue-300',
-  commercial: 'bg-brand-500/10 border-brand-500/20 text-brand-300',
-  design: 'bg-pink-500/10 border-pink-500/20 text-pink-300',
-  other: 'bg-white/5 border-white/10 text-white/60',
+  tech: 'bg-brand-50 border-brand-200 text-brand-700',
+  commercial: 'bg-brand-50 border-brand-200 text-brand-700',
+  design: 'bg-brand-100 border-brand-300 text-brand-800',
+  other: 'bg-surface-100 border-surface-300 text-surface-600',
 };
 
 const typeLabels: Record<string, string> = {
@@ -35,7 +35,7 @@ export function Projects({ data }: ProjectsProps) {
           <h2 className="section-title text-balance">
             Casos <span className="gradient-text">destacados</span>
           </h2>
-          <p className="text-white/50 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-surface-600 mt-4 max-w-xl mx-auto text-lg">
             Algunos de los proyectos y casos en los que he tenido el placer de trabajar.
           </p>
         </div>
@@ -48,7 +48,7 @@ export function Projects({ data }: ProjectsProps) {
               className="card-base overflow-hidden group flex flex-col"
             >
               {/* Image / Placeholder */}
-              <div className="relative h-44 bg-gradient-to-br from-surface-600 to-surface-800 overflow-hidden flex-shrink-0">
+              <div className="relative h-44 bg-gradient-to-br from-brand-50 to-brand-100 overflow-hidden flex-shrink-0">
                 {project.image ? (
                   <img
                     src={project.image}
@@ -76,10 +76,10 @@ export function Projects({ data }: ProjectsProps) {
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="font-display text-lg font-semibold text-white mb-2 group-hover:text-brand-200 transition-colors">
+                <h3 className="font-display text-lg font-semibold text-surface-950 mb-2 group-hover:text-brand-700 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed mb-4 flex-1">
+                <p className="text-surface-600 text-sm leading-relaxed mb-4 flex-1">
                   {project.description}
                 </p>
 
@@ -88,7 +88,7 @@ export function Projects({ data }: ProjectsProps) {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 rounded-lg bg-white/5 text-white/50 text-xs font-mono border border-white/5"
+                      className="px-2.5 py-1 rounded-lg bg-surface-100 text-surface-600 text-xs font-mono border border-surface-300"
                     >
                       {tag}
                     </span>
@@ -98,7 +98,7 @@ export function Projects({ data }: ProjectsProps) {
                 {/* CTA */}
                 <a
                   href={project.url || '#contacto'}
-                  className="flex items-center gap-2 text-brand-400 hover:text-brand-300 text-sm font-medium transition-colors group/link"
+                  className="flex items-center gap-2 text-brand-700 hover:text-brand-600 text-sm font-medium transition-colors group/link"
                 >
                   Ver más
                   <ExternalLink

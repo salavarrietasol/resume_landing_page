@@ -31,12 +31,12 @@ export function Testimonials({ data }: TestimonialsProps) {
               }`}
             >
               {/* Quote icon */}
-              <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center mb-5 flex-shrink-0">
-                <Quote size={18} className="text-brand-400" />
+              <div className="w-10 h-10 rounded-xl bg-brand-50 border border-brand-200 flex items-center justify-center mb-5 flex-shrink-0">
+                <Quote size={18} className="text-brand-700" />
               </div>
 
               {/* Comment */}
-              <p className="text-white/70 leading-relaxed text-sm flex-1 mb-6 italic">
+              <p className="text-surface-700 leading-relaxed text-sm flex-1 mb-6 italic">
                 "{testimonial.comment}"
               </p>
 
@@ -49,7 +49,7 @@ export function Testimonials({ data }: TestimonialsProps) {
                     className={
                       i < testimonial.rating
                         ? 'fill-yellow-400 text-yellow-400'
-                        : 'text-white/20'
+                        : 'text-surface-300'
                     }
                   />
                 ))}
@@ -69,8 +69,8 @@ export function Testimonials({ data }: TestimonialsProps) {
                   )}
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-sm">{testimonial.name}</p>
-                  <p className="text-white/45 text-xs font-mono">{testimonial.role}</p>
+                  <p className="font-semibold text-surface-950 text-sm">{testimonial.name}</p>
+                  <p className="text-surface-500 text-xs font-mono">{testimonial.role}</p>
                 </div>
               </div>
             </div>

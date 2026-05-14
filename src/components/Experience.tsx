@@ -39,7 +39,7 @@ export function Experience({ data }: ExperienceProps) {
                   className={`absolute left-5 lg:left-1/2 top-6 w-3 h-3 rounded-full transform -translate-x-1/2 z-10 ${
                     exp.current
                       ? 'bg-brand-400 shadow-glow ring-4 ring-brand-500/20'
-                      : 'bg-surface-600 border-2 border-brand-500/40'
+                      : 'bg-white border-2 border-brand-400/60'
                   }`}
                 />
 
@@ -52,8 +52,8 @@ export function Experience({ data }: ExperienceProps) {
                   <span
                     className={`px-3 py-1 rounded-full text-xs font-mono font-medium ${
                       exp.current
-                        ? 'bg-brand-500/20 border border-brand-500/30 text-brand-300'
-                        : 'bg-white/5 border border-white/10 text-white/50'
+                        ? 'bg-brand-50 border border-brand-200 text-brand-700'
+                        : 'bg-white border border-surface-300 text-surface-500'
                     }`}
                   >
                     {exp.period}
@@ -66,8 +66,8 @@ export function Experience({ data }: ExperienceProps) {
                   <span
                     className={`lg:hidden inline-block px-3 py-1 rounded-full text-xs font-mono font-medium mb-3 ${
                       exp.current
-                        ? 'bg-brand-500/20 border border-brand-500/30 text-brand-300'
-                        : 'bg-white/5 border border-white/10 text-white/50'
+                        ? 'bg-brand-50 border border-brand-200 text-brand-700'
+                        : 'bg-white border border-surface-300 text-surface-500'
                     }`}
                   >
                     {exp.period}
@@ -75,21 +75,21 @@ export function Experience({ data }: ExperienceProps) {
 
                   {exp.current && (
                     <div className="flex items-center gap-2 mb-3">
-                      <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-slow inline-block" />
-                      <span className="text-green-400 text-xs font-mono">Posición actual</span>
+                      <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse-slow inline-block" />
+                      <span className="text-brand-700 text-xs font-mono">Posición actual</span>
                     </div>
                   )}
 
-                  <h3 className="font-display text-lg font-bold text-white mb-1">{exp.role}</h3>
-                  <p className="text-brand-400 font-mono text-sm mb-3">{exp.company}</p>
-                  <p className="text-white/60 text-sm leading-relaxed mb-4">{exp.description}</p>
+                  <h3 className="font-display text-lg font-bold text-surface-950 mb-1">{exp.role}</h3>
+                  <p className="text-brand-700 font-mono text-sm mb-3">{exp.company}</p>
+                  <p className="text-surface-600 text-sm leading-relaxed mb-4">{exp.description}</p>
 
                   {/* Achievements */}
                   <div className="space-y-2">
                     {exp.achievements.map((achievement, i) => (
                       <div key={i} className="flex items-start gap-2">
-                        <CheckCircle2 size={14} className="text-brand-400 mt-0.5 flex-shrink-0" />
-                        <span className="text-white/60 text-xs">{achievement}</span>
+                        <CheckCircle2 size={14} className="text-brand-700 mt-0.5 flex-shrink-0" />
+                        <span className="text-surface-600 text-xs">{achievement}</span>
                       </div>
                     ))}
                   </div>

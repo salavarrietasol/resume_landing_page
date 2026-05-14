@@ -19,7 +19,7 @@ export function Services({ data }: ServicesProps) {
           <h2 className="section-title text-balance">
             Mis <span className="gradient-text">servicios</span>
           </h2>
-          <p className="text-white/50 mt-4 max-w-xl mx-auto text-lg">
+          <p className="text-surface-600 mt-4 max-w-xl mx-auto text-lg">
             Soluciones diseñadas para proteger y hacer crecer lo que más valoras.
           </p>
         </div>
@@ -35,20 +35,20 @@ export function Services({ data }: ServicesProps) {
               }}
             >
               {/* Icon */}
-              <div className="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-500/20 group-hover:border-brand-400/30 transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-brand-50 border border-brand-200 flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-100 group-hover:border-brand-300 transition-all duration-300">
                 {service.icon}
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-white mb-3 group-hover:text-brand-200 transition-colors">
+              <h3 className="font-display text-xl font-semibold text-surface-950 mb-3 group-hover:text-brand-700 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-white/55 leading-relaxed text-sm">
+              <p className="text-surface-600 leading-relaxed text-sm">
                 {service.description}
               </p>
 
               {/* Hover indicator */}
-              <div className="mt-5 flex items-center gap-2 text-brand-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="mt-5 flex items-center gap-2 text-brand-700 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span>Saber más</span>
                 <span>→</span>
               </div>

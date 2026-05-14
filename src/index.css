@@ -10,8 +10,8 @@
   }
 
   body {
-    @apply text-white font-body;
-    background: linear-gradient(135deg, #9190ca 0%, #8379f1 100%);
+    @apply text-surface-950 font-body;
+    background: linear-gradient(135deg, #d6d5e6 0%, #ada9e4 100%);
     background-attachment: fixed;
   }
 

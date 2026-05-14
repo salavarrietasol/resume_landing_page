@@ -10,25 +10,32 @@ export default {
       },
       colors: {
         brand: {
-          50: '#f0f0ff',
-          100: '#e0e0fe', 
-          200: '#c4c3fd', 
-          300: '#a29afb', 
-          400: '#8470f8', //color principal claro
-          500: '#210f52', //color principal
-          600: '#5c30e8', //color hover
-          700: '#4e22ce', 
-          800: '#401da7',
-          900: '#361b84', 
-          950: '#210f52', //color más oscuro para texto y detalles
-        },
-        surface: {
-          900: '#0a0a0f',
-          800: '#111118',
-          700: '#1a1a26',
-          600: '#222232',
-          500: '#2d2d42',
-        },
+        50: '#f5f2ff',
+        100: '#ede7ff',
+        200: '#d9ccff',
+        300: '#bfa6ff',
+        400: '#9a72f6',
+        500: '#7847e0',
+        600: '#6230c9',
+        700: '#4f22a7',
+        800: '#3f1b86',
+        900: '#321668',
+        950: '#1d0b45',
+      },
+
+      surface: {
+        50: '#ffffff',
+        100: '#faf9ff',
+        200: '#f3f0ff',
+        300: '#e8e2fa',
+        400: '#b8aecf',
+        500: '#756b91',
+        600: '#4c4268',
+        700: '#2b2342',
+        800: '#171332',
+        900: '#0c1744',
+        950: '#071239',
+      },
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease forwards',
@@ -57,13 +64,13 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-mesh': 'linear-gradient(135deg, #0a0a0f 0%, #1a1a26 50%, #0a0a0f 100%)',
+        'gradient-mesh': 'linear-gradient(135deg, #fbfaff 0%, #f3efff 48%, #ebe5ff 100%)',
       },
       boxShadow: {
-        'brand': '0 0 40px rgba(108, 78, 243, 0.15)',
-        'brand-lg': '0 0 80px rgba(108, 78, 243, 0.2)',
-        'card': '0 4px 24px rgba(0,0,0,0.4)',
-        'glow': '0 0 20px rgba(108, 78, 243, 0.4)',
+        'brand': '0 18px 45px rgba(98, 48, 201, 0.16)',
+        'brand-lg': '0 24px 80px rgba(98, 48, 201, 0.22)',
+        'card': '0 16px 40px rgba(12, 23, 68, 0.10)',
+        'glow': '0 0 24px rgba(120, 71, 224, 0.38)',
       },
     },
   },
