@@ -1,11 +1,14 @@
 import { Download, MessageCircle, ChevronDown } from 'lucide-react';
 import type { ProfileData } from '../types';
+import { useState } from 'react';
 
 interface HeroProps {
   data: ProfileData;
 }
 
 export function Hero({ data }: HeroProps) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
     <section
       id="inicio"
@@ -43,7 +46,7 @@ export function Hero({ data }: HeroProps) {
               style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
             >
               Hola, soy{' '}
-              <span>{data.name.split(' ')[0]}</span>
+              <span >{data.name.split(' ')[0]}</span>
             </h1>
 
             {/* Title */}
@@ -112,38 +115,72 @@ export function Hero({ data }: HeroProps) {
             style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
           >
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-              {/* Outer ring */}
+              {/* Outer rings */}
               <div className="absolute inset-0 rounded-full border border-brand-500/20 animate-float" />
-              <div className="absolute inset-4 rounded-full border border-brand-400/15 animate-float" style={{ animationDelay: '-1s' }} />
+              <div
+                className="absolute inset-4 rounded-full border border-brand-400/15 animate-float"
+                style={{ animationDelay: '-1s' }}
+              />
+
               {/* Glow */}
               <div className="absolute inset-8 rounded-full bg-brand-600/10 blur-xl" />
-              {/* Avatar image or initials */}
-              <div className="absolute inset-8 rounded-full overflow-hidden bg-gradient-to-br from-brand-800 to-brand-950 flex items-center justify-center shadow-brand-lg border border-white/10">
-                {data.avatar ? (
-                  <img
-                    src={data.avatar}
-                    alt={data.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <span className="font-display text-6xl font-bold gradient-text">
-                    {data.name
-                      .split(' ')
-                      .map((n) => n[0])
-                      .join('')
-                      .slice(0, 2)}
-                  </span>
-                )}
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-2 -right-2 bg-surface-700 border border-white/10 rounded-2xl px-4 py-2.5 shadow-card">
-                <p className="text-white font-semibold text-sm">{data.title}</p>
-                <p className="text-brand-400 text-xs font-mono">{data.location}</p>
-              </div>
+
+              {/* Avatar flip */}
+              <button
+                type="button"
+                onClick={() => setIsFlipped(!isFlipped)}
+                className="absolute inset-8 rounded-full focus:outline-none z-10"
+                aria-label="Flip profile image"
+              >
+                <div className="avatar-purple-circle">
+                  <div className="flip-avatar-perspective">
+                    <div className={`flip-avatar-inner ${isFlipped ? 'is-flipped' : ''}`}>
+                      {/* Front */}
+                      <div className="flip-avatar-face avatar-face">
+                        {data.avatar ? (
+                          <img
+                            src={data.avatar}
+                            alt={data.name}
+                            className="avatar-image"
+                          />
+                        ) : (
+                          <span className="font-display text-6xl font-bold text-white">
+                            {data.name
+                              .split(' ')
+                              .map((n) => n[0])
+                              .join('')
+                              .slice(0, 2)}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Back */}
+                      <div className="flip-avatar-face flip-avatar-back avatar-face">
+                        {data.avatarBack ? (
+                          <img
+                            src={data.avatarBack}
+                            alt={`${data.name} alternate avatar`}
+                            className="avatar-image"
+                          />
+                        ) : (
+                          <span className="font-display text-6xl font-bold text-white">
+                            CV
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
+            {/* Floating badge */}
+            <div className="absolute -bottom-2 -right-2 bg-surface-700 border border-white/10 rounded-2xl px-4 py-2.5 shadow-card z-20">
+              <p className="text-white font-semibold text-sm">{data.title}</p>
+              <p className="text-brand-400 text-xs font-mono">{data.location}</p>
             </div>
           </div>
         </div>
-
+        </div>
         {/* Scroll indicator */}
         <div className="flex justify-center mt-16">
           <a

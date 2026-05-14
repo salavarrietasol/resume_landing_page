@@ -11,7 +11,8 @@ export const profileData: ProfileData = {
   // ─────────────────────────────────────────────
   name: 'Carolina Vélez',
   title: 'Asesora Comercial & de Seguros',
-  avatar: '/avatar-carolina-velez.jpg',
+  avatar: '/foto_prueba.png', 
+  avatarBack: '/foto_prueba_2.png',
   tagline: 'Seguros para tu tranquilidad y la de tu familia.',
   description:
     'Te asesoro para que elijas el seguro ideal, con las mejores coberturas y el mejor precio. Más de 7 años ayudando a familias y empresas a proteger lo que más valoran.',
@@ -25,11 +26,11 @@ Mi filosofía es simple: un buen seguro no es el más caro, es el que te da la c
   // DATOS DE CONTACTO
   // ─────────────────────────────────────────────
   email: 'carolina@ejemplo.com',
-  phone: '+57 300 000 0000',
-  whatsapp: '573000000000', // Solo números, sin + ni espacios
+  phone: '+57 300 4843 894',
+  whatsapp: '573004843894', // Solo números, sin + ni espacios
   location: 'Medellín, Colombia',
-  availability: 'Disponible para nuevos clientes',
-  languages: ['Español', 'Inglés intermedio'],
+  availability: 'Disponible',
+  languages: ['Español'],
 
   // ─────────────────────────────────────────────
   // REDES SOCIALES

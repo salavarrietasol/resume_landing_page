@@ -6,6 +6,7 @@ export interface ProfileData {
   description: string;
   longBio: string;
   avatar: string;
+  avatarBack: string;
 
   // Datos de contacto
   email: string;
@@ -80,4 +81,5 @@ export interface Testimonial {
   comment: string;
   rating: number;
   avatar?: string;
+  avatarBack?: string;
 }
