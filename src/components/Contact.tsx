@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, MessageCircle, Mail, Linkedin, Instagram } from 'lucide-react';
+import { Send, MessageCircle, Mail, Linkedin } from 'lucide-react';
 import type { ProfileData } from '../types';
 
 interface ContactProps {
