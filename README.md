@@ -4,15 +4,15 @@ Plantilla premium de CV Web / Portafolio Personal en **React + TypeScript + Tail
 
 ---
 
-## ✨ Características
+## Características
 
-- ⚡ Vite + React 18 + TypeScript
-- 🎨 Tailwind CSS — diseño dark mode premium
-- 📱 Responsive mobile-first
-- 🧩 Componentes reutilizables y separados
-- 📁 Archivo de datos centralizado (`profileData.ts`)
-- 🟢 Botón flotante de WhatsApp
-- 🔗 Listo para desplegar en Vercel
+- Vite + React 18 + TypeScript
+- Tailwind CSS — diseño dark mode premium
+- Responsive mobile-first
+- Componentes reutilizables y separados
+- Archivo de datos centralizado (`profileData.ts`)
+- Botón flotante de WhatsApp
+- Listo para desplegar en Vercel
 
 ---
 
@@ -35,7 +35,7 @@ cv-portfolio/
 │   │   ├── Footer.tsx
 │   │   └── WhatsAppButton.tsx
 │   ├── data/
-│   │   └── profileData.ts         ← 🔑 ARCHIVO PRINCIPAL DE DATOS
+│   │   └── profileData.ts         ←  ARCHIVO PRINCIPAL DE DATOS
 │   ├── types/
 │   │   └── index.ts
 │   ├── App.tsx
@@ -68,7 +68,7 @@ npm run preview
 
 ---
 
-## ✏️ Personalización
+## Personalización
 
 ### Para adaptar a un nuevo cliente, solo edita `src/data/profileData.ts`:
 
@@ -111,7 +111,7 @@ cvUrl: '/cv-nombre.pdf',
 
 ---
 
-## 🚀 Despliegue en Vercel
+## Despliegue en Vercel
 
 1. Sube el proyecto a GitHub
 2. Conecta el repositorio en [vercel.com](https://vercel.com)
