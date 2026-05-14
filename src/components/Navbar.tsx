@@ -46,7 +46,7 @@ export function Navbar({ data }: NavbarProps) {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3 group">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center font-display font-bold text-sm text-white shadow-glow group-hover:shadow-brand-lg transition-shadow duration-300">
-              <h1>S</h1>
+              {initials}
             </div>
             <span className="font-display font-semibold text-white text-lg hidden sm:block">
               {data.name.split(' ')[0]}
