@@ -48,13 +48,13 @@ export function Contact({ data }: ContactProps) {
         <div className="grid lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
           {/* Form */}
           <div className="lg:col-span-3 card-base p-8">
-            <h3 className="font-display text-xl font-semibold text-white mb-6">
+            <h3 className="font-display text-xl font-semibold text-surface-950 mb-6">
               Envíame un mensaje
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="block text-white/60 text-sm font-medium mb-2 font-mono">
+                <label className="block text-surface-600 text-sm font-medium mb-2 font-mono">
                   Tu nombre
                 </label>
                 <input
@@ -69,7 +69,7 @@ export function Contact({ data }: ContactProps) {
               </div>
 
               <div>
-                <label className="block text-white/60 text-sm font-medium mb-2 font-mono">
+                <label className="block text-surface-600 text-sm font-medium mb-2 font-mono">
                   Tu email
                 </label>
                 <input
@@ -84,7 +84,7 @@ export function Contact({ data }: ContactProps) {
               </div>
 
               <div>
-                <label className="block text-white/60 text-sm font-medium mb-2 font-mono">
+                <label className="block text-surface-600 text-sm font-medium mb-2 font-mono">
                   Tu mensaje
                 </label>
                 <textarea
@@ -119,7 +119,7 @@ export function Contact({ data }: ContactProps) {
           {/* Contact info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="card-base p-6">
-              <h3 className="font-display text-lg font-semibold text-white mb-5">
+              <h3 className="font-display text-lg font-semibold text-surface-950 mb-5">
                 Contáctame directo
               </h3>
               <div className="space-y-3">
@@ -154,12 +154,12 @@ export function Contact({ data }: ContactProps) {
             </div>
 
             {/* CTA Card */}
-            <div className="card-base p-6 bg-gradient-to-br from-brand-600/20 to-brand-900/20 border-brand-500/20">
+            <div className="card-base p-6 bg-gradient-to-br from-white to-white border-white/5">
               <div className="text-3xl mb-3">⚡</div>
-              <h4 className="font-display font-semibold text-white mb-2">
+              <h4 className="font-display font-semibold text-surface-950 mb-2">
                 Respuesta rápida
               </h4>
-              <p className="text-white/60 text-sm leading-relaxed">
+              <p className="text-surface-600 text-sm leading-relaxed">
                 Generalmente respondo en menos de 2 horas durante días hábiles.
               </p>
             </div>
@@ -196,7 +196,7 @@ function ContactItem({
         {icon}
       </div>
       <div>
-        <p className="text-white/40 text-xs font-mono">{label}</p>
+        <p className="text-surface-500 text-xs font-mono">{label}</p>
         <p className={`text-sm font-medium ${color} group-hover:opacity-100 opacity-80 transition-opacity`}>
           {value}
         </p>

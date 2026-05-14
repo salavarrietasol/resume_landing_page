@@ -46,7 +46,11 @@
   }
 
   .section-title {
-    @apply font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white;
+    @apply font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-surface-950;
+  }
+
+  .section-title .gradient-text {
+    @apply text-surface-950;
   }
 
   .section-subtitle {
@@ -54,7 +58,7 @@
   }
 
   .card-base {
-    @apply bg-surface-700/50 border border-white/5 rounded-2xl backdrop-blur-sm
+    @apply bg-white border border-white/5 rounded-2xl backdrop-blur-sm
            hover:border-brand-500/30 hover:shadow-brand transition-all duration-300;
   }
 
