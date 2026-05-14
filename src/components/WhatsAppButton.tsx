@@ -37,7 +37,7 @@ export function WhatsAppButton({ data }: WhatsAppButtonProps) {
             ¡Hola! 👋 ¿En qué puedo ayudarte hoy?
           </p>
           <a
-            href={`https://wa.me/${data.whatsapp}`}
+            href="https://wa.me/573004843894?text=%C2%A1Hola!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20seguros.%20%C2%BFMe%20puedes%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center bg-green-500 hover:bg-green-400 text-white text-sm font-medium py-2.5 rounded-xl transition-colors"

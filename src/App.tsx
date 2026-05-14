@@ -16,8 +16,8 @@ function App() {
       <Navbar data={profileData} />
       <main>
         <Hero data={profileData} />
-        <About data={profileData} />
         <Services data={profileData} />
+        <About data={profileData} />
         <Experience data={profileData} />
         <Projects data={profileData} />
         <Testimonials data={profileData} />

@@ -42,7 +42,7 @@
   }
 
   .section-padding {
-    @apply py-20 lg:py-28;
+    @apply py-5 lg:py-10;
   }
 
   .section-title {
@@ -71,9 +71,7 @@
            hover:-translate-y-0.5 active:translate-y-0;
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-white via-brand-200 to-brand-400 bg-clip-text text-transparent;
-  }
+  
 
   .noise-bg::before {
     content: '';

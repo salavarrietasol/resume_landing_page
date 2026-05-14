@@ -35,8 +35,8 @@ export function Hero({ data }: HeroProps) {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-mono mb-8 animate-fade-up">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-slow inline-block" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-600 border-surface-600  text-surface-300 text-sm font-mono mb-8 animate-fade-up ">
+              <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse-slow inline-block" />
               {data.availability}
             </div>
 
@@ -79,7 +79,7 @@ export function Hero({ data }: HeroProps) {
               style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}
             >
               <a
-                href={`https://wa.me/${data.whatsapp}`}
+                href={"https://wa.me/573004843894?text=%C2%A1Hola!%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20seguros.%20%C2%BFMe%20puedes%20brindar%20m%C3%A1s%20informaci%C3%B3n%3F"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-base py-3.5 px-8"

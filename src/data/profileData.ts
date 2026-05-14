@@ -10,7 +10,7 @@ export const profileData: ProfileData = {
   // INFORMACIÓN PERSONAL
   // ─────────────────────────────────────────────
   name: 'Carolina Vélez',
-  title: 'Asesora Comercial & de Seguros',
+  title: 'Asesora Comercial y de Seguros',
   avatar: '/foto_prueba.png', 
   avatarBack: '/foto_prueba_2.png',
   tagline: 'Seguros para tu tranquilidad y la de tu familia.',

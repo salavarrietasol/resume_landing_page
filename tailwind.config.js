@@ -4,23 +4,23 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Bricolage Grotesque"', 'sans-serif'],
-        body: ['"Poppins"', 'sans-serif'],
-        mono: ['"Schibsted Grotesk"', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
+        mono: ['"Bricolage Grotesque"'],
       },
       colors: {
         brand: {
           50: '#f0f0ff',
-          100: '#e0e0fe',
-          200: '#c4c3fd',
-          300: '#a29afb',
-          400: '#8470f8',
-          500: '#6c4ef3',
-          600: '#5c30e8',
-          700: '#4e22ce',
+          100: '#e0e0fe', 
+          200: '#c4c3fd', 
+          300: '#a29afb', 
+          400: '#8470f8', //color principal claro
+          500: '#210f52', //color principal
+          600: '#5c30e8', //color hover
+          700: '#4e22ce', 
           800: '#401da7',
-          900: '#361b84',
-          950: '#210f52',
+          900: '#361b84', 
+          950: '#210f52', //color más oscuro para texto y detalles
         },
         surface: {
           900: '#0a0a0f',
@@ -57,7 +57,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-mesh': 'linear-gradient(135deg, #a29afb 0%, #1a1a26 50%, #c4c3fd 100%)',
+        'gradient-mesh': 'linear-gradient(135deg, #0a0a0f 0%, #1a1a26 50%, #0a0a0f 100%)',
       },
       boxShadow: {
         'brand': '0 0 40px rgba(108, 78, 243, 0.15)',
